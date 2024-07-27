@@ -1,20 +1,70 @@
-# Insurance Predicter - US Health Insurance Dataset
+# Insurance Charges Prediction
 
-Insurance Premium Charges in US with important details for risk underwriting.
+This project demonstrates a regression model built using TensorFlow to predict insurance charges based on various features. The dataset used is the "insurance" dataset from a public repository.
 
-## About Dataset
-### Context
-The venerable insurance industry is no stranger to data driven decision making. Yet in today's rapidly transforming digital landscape, Insurance is struggling to adapt and benefit from new technologies compared to other industries, even within the BFSI sphere (compared to the Banking sector for example.) Extremely complex underwriting rule-sets that are radically different in different product lines, many non-KYC environments with a lack of centralized customer information base, complex relationship with consumers in traditional risk underwriting where sometimes customer centricity runs reverse to business profit, inertia of regulatory compliance - are some of the unique challenges faced by Insurance Business.
+## Features
 
-Despite this, emergent technologies like AI and Block Chain have brought a radical change in Insurance, and Data Analytics sits at the core of this transformation. We can identify 4 key factors behind the emergence of Analytics as a crucial part of InsurTech:
+- **Data Preprocessing**: Normalization of numerical features and one-hot encoding of categorical features.
+- **Model Architecture**: A neural network with dropout layers for regularization.
+- **Training & Evaluation**: Model training with early stopping and evaluation on test data.
+- **Visualization**: Plotting training and validation loss over epochs.
 
-Big Data: The explosion of unstructured data in the form of images, videos, text, emails, social media
-AI: The recent advances in Machine Learning and Deep Learning that can enable businesses to gain insight, do predictive analytics and build cost and time - efficient innovative solutions
-Real time Processing: Ability of real time information processing through various data feeds (for ex. social media, news)
-Increased Computing Power: a complex ecosystem of new analytics vendors and solutions that enable carriers to combine data sources, external insights, and advanced modeling techniques in order to glean insights that were not possible before.
+## Requirements
 
-### Content
-This dataset contains 1338 rows of insured data, where the Insurance charges are given against the following attributes of the insured: Age, Sex, BMI, Number of Children, Smoker and Region. There are no missing or undefined values in the dataset.
+- Python 3.x
+- TensorFlow
+- Pandas
+- NumPy
+- Matplotlib
+- scikit-learn
 
-### Inspiration
-This relatively simple dataset should be an excellent starting point for EDA, Statistical Analysis and Hypothesis testing and training Linear Regression models for predicting Insurance Premium Charges.
+## Installation
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/yourusername/Insurance-Charges-Prediction.git
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```bash
+    cd Insurance-Charges-Prediction
+    ```
+
+3. **Create and activate a virtual environment (optional but recommended):**
+
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+
+4. **Install the required packages:**
+
+    ```bash
+    pip install tensorflow pandas numpy matplotlib scikit-learn
+    ```
+
+## Usage
+
+1. **Run the script:**
+
+    Execute the following command to preprocess the data, build and train the model, and visualize the results:
+
+    ```bash
+    python train_model.py
+    ```
+
+2. **Script Details:**
+
+    - **Data Loading**: Reads the insurance dataset from a public URL.
+    - **Preprocessing**: Normalizes numerical features, one-hot encodes categorical features.
+    - **Model Building**: Defines and compiles a neural network model.
+    - **Training**: Trains the model and uses early stopping to avoid overfitting.
+    - **Evaluation**: Evaluates the model on test data.
+    - **Visualization**: Plots training and validation loss.
+
+
+### Output
+
+The script will output the final evaluation metrics of the model and display a plot of the training and validation loss over epochs.
