@@ -1,3 +1,26 @@
+
+# Insurance Premium Prediction using Machine & Deep Learning
+
+This project investigates the impact of demographic and lifestyle features on health insurance premiums. A diverse suite of regression models—including traditional ML regressors and deep neural networks—was employed to predict charges and evaluate the relative influence of each feature. The study identifies **smoking status** as the most dominant factor, contributing approximately **62.04%** to the prediction performance.
+
+---
+
+## Objective
+
+To build accurate and interpretable models for predicting individual insurance costs based on features such as age, BMI, number of children, region, and smoking behavior.
+
+---
+
+## Experimental Setup
+
+- **Dataset:** 1338 samples, 7 features (sourced from Kaggle)
+- **Preprocessing:** Encoding, outlier handling (IQR & Z-score), standard scaling
+- **Modeling:** 13 classical ML models + 2 deep learning architectures (base & tuned)
+- **Tuning Methodology:** Keras Tuner (Hyperband) for deep learning model optimization
+
+---
+
+## Results
 | Model                          | RMSE      | MAE      | R² Score            |
 |-------------------------------|-----------|----------|---------------------|
 | Linear Regression             | 0.5342    | 0.3567   | 0.6049              |
@@ -14,3 +37,11 @@
 | ARD Regression                | 0.5362    | 0.3572   | 0.6027              |
 | Deep Learning (Base)          | -         | 0.2394   | 0.7363              |
 | Deep Learning (Tuned)         | -         | 0.2426   | 0.7818              |
+
+---
+
+## Key Findings
+
+- **Smoking** is the most significant predictor of insurance premiums.
+- Ensemble models and tuned DNNs exhibit superior predictive capabilities.
+- Outlier removal and feature scaling substantially improve model robustness.
