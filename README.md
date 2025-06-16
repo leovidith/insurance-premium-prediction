@@ -1,5 +1,5 @@
 
-# Insurance Premium Prediction using Machine & Deep Learning
+# Insurance Premium Prediction using Machine  Deep Learning
 
 This project investigates the impact of demographic and lifestyle features on health insurance premiums. A diverse suite of regression models—including traditional ML regressors and deep neural networks—was employed to predict charges and evaluate the relative influence of each feature. The study identifies **smoking status** as the most dominant factor, contributing approximately **62.04%** to the prediction performance.
 
